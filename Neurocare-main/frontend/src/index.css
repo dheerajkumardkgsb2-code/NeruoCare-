@@ -1,0 +1,294 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --nc-bg: #f8fafc;
+  --nc-surface: #ffffff;
+  --nc-surface-soft: #f1f5f9;
+  --nc-border: #e2e8f0;
+  --nc-text: #0f172a;
+  --nc-text-secondary: #475569;
+  --nc-text-muted: #64748b;
+  --nc-primary: #6366f1;
+  --nc-primary-dark: #4f46e5;
+  --nc-sidebar-active: #ffffff;
+  --nc-sidebar-active-text: #4338ca;
+  color-scheme: light;
+}
+
+:root.dark {
+  --nc-bg: #0f172a;
+  --nc-surface: #1e293b;
+  --nc-surface-soft: #172033;
+  --nc-border: #334155;
+  --nc-text: #f8fafc;
+  --nc-text-secondary: #cbd5e1;
+  --nc-text-muted: #94a3b8;
+  --nc-primary: #818cf8;
+  --nc-primary-dark: #6366f1;
+  --nc-sidebar-active: #334155;
+  --nc-sidebar-active-text: #e0e7ff;
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  background-color: var(--nc-bg);
+  color: var(--nc-text);
+  transition: background-color 180ms ease, color 180ms ease;
+}
+
+.nc-page,
+.nc-page__main {
+  background-color: var(--nc-bg);
+  color: var(--nc-text);
+}
+
+.nc-surface,
+.nc-card {
+  background-color: var(--nc-surface);
+  border-color: var(--nc-border);
+  color: var(--nc-text);
+}
+
+.nc-border {
+  border-color: var(--nc-border);
+}
+
+.nc-text {
+  color: var(--nc-text);
+}
+
+.nc-text-secondary {
+  color: var(--nc-text-secondary);
+}
+
+.nc-text-muted {
+  color: var(--nc-text-muted);
+}
+
+.nc-input {
+  background-color: var(--nc-surface);
+  border-color: var(--nc-border);
+  color: var(--nc-text);
+}
+
+.nc-sidebar {
+  background: linear-gradient(180deg, #eff6ff 0%, #eef2ff 100%);
+  border-color: #c7d2fe;
+  color: var(--nc-text-secondary);
+}
+
+.dark .nc-sidebar {
+  background: linear-gradient(180deg, #111c31 0%, #0f172a 100%);
+  border-color: var(--nc-border);
+}
+
+.nc-sidebar__decor {
+  background: #c7d2fe;
+}
+
+.dark .nc-sidebar__decor {
+  background: #273449;
+}
+
+.nc-sidebar__footer {
+  border-color: #c7d2fe;
+}
+
+.nc-sidebar__link--active {
+  background-color: transparent !important;
+  background-image: linear-gradient(var(--nc-sidebar-active), var(--nc-sidebar-active)) !important;
+  color: var(--nc-sidebar-active-text);
+}
+
+.dark .nc-sidebar__footer {
+  border-color: var(--nc-border);
+}
+
+.nc-sidebar__mobile-toggle {
+  border: 1px solid var(--nc-border);
+  background-color: var(--nc-surface);
+  color: var(--nc-primary-dark);
+}
+
+.dark .nc-sidebar__mobile-toggle {
+  color: #c7d2fe;
+}
+
+.nc-dashboard-header {
+  border: 1px solid var(--nc-border);
+  border-radius: 1rem;
+  background-color: var(--nc-surface);
+  color: var(--nc-text);
+  box-shadow: 0 8px 24px rgb(15 23 42 / 5%);
+}
+
+.dark .nc-dashboard-header {
+  box-shadow: 0 8px 24px rgb(2 6 23 / 20%);
+}
+
+.nc-chat-page {
+  background-color: var(--nc-bg);
+  color: var(--nc-text);
+}
+
+.nc-chat-panel {
+  background-color: var(--nc-surface);
+  border-color: var(--nc-border);
+  color: var(--nc-text);
+}
+
+.nc-chat-assistant {
+  background-color: var(--nc-surface-soft);
+  color: var(--nc-text);
+}
+
+.nc-chat-loading {
+  background-color: var(--nc-bg);
+  color: var(--nc-text-secondary);
+}
+
+.nc-chat-form {
+  border-color: var(--nc-border);
+  background-color: var(--nc-surface);
+}
+
+.nc-chat-input {
+  background-color: var(--nc-surface-soft);
+  border-color: var(--nc-border);
+  color: var(--nc-text);
+}
+
+.nc-chat-footer {
+  color: var(--nc-text-muted);
+}
+
+html[data-theme="light"] .nc-chat-page .nc-chat-starter {
+  background-color: #eef2ff !important;
+  color: #4338ca !important;
+}
+
+html[data-theme="dark"] .nc-chat-page .nc-chat-starter {
+  background-color: #242f4a !important;
+  color: #c7d2fe !important;
+}
+
+@layer utilities {
+.dark .nc-sidebar .nc-sidebar__link--active {
+  color: #e0e7ff !important;
+}
+
+.dark .min-h-screen.bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, #0f172a, #111827) !important;
+}
+
+.dark :is(.bg-white, .bg-gray-50, .bg-gray-100, .bg-slate-50, .bg-slate-100, .bg-blue-50, .bg-indigo-50, .bg-purple-50),
+.dark [class~="bg-white/80"],
+.dark [class~="bg-white/90"] {
+  background-color: #1e293b !important;
+}
+
+.dark :is(.bg-gray-200, .bg-slate-200, .bg-blue-100, .bg-indigo-100, .bg-purple-100),
+.dark [class~="bg-blue-50/80"],
+.dark [class~="bg-indigo-50/80"],
+.dark [class~="bg-purple-50/80"] {
+  background-color: #273449 !important;
+}
+
+.dark [class~="from-white"][class~="to-gray-50"] {
+  background-image: linear-gradient(to bottom right, #1e293b, #1e293b) !important;
+}
+
+.dark :is(.text-black, .text-gray-900, .text-gray-800, .text-gray-700, .text-slate-900, .text-slate-800, .text-slate-700) {
+  color: #f8fafc !important;
+}
+
+.dark :is(.text-gray-600, .text-gray-500, .text-slate-600, .text-slate-500) {
+  color: #cbd5e1 !important;
+}
+
+.dark :is(.text-gray-400, .text-slate-400) {
+  color: #94a3b8 !important;
+}
+
+.dark :is(.text-purple-900, .text-purple-800, .text-purple-700) {
+  color: #ddd6fe !important;
+}
+
+.dark :is(.text-purple-600, .text-purple-500, .text-blue-700, .text-blue-800) {
+  color: #c4b5fd !important;
+}
+
+.dark :is(.text-indigo-900, .text-indigo-800, .text-indigo-700) {
+  color: #c7d2fe !important;
+}
+
+.dark :is(.text-indigo-600, .text-indigo-500) {
+  color: #a5b4fc !important;
+}
+
+.dark :is(.border-gray-100, .border-gray-200, .border-gray-300, .border-gray-400, .border-slate-100, .border-slate-200, .border-slate-300, .border-blue-100, .border-purple-100) {
+  border-color: #334155 !important;
+}
+
+.dark :is(.border-indigo-100, .border-indigo-200, .border-indigo-300, .border-blue-200) {
+  border-color: #334155 !important;
+}
+
+.dark :is(input, textarea, select) {
+  background-color: #1e293b;
+  border-color: #475569;
+  color: #f8fafc;
+  color-scheme: dark;
+}
+
+.dark :is(input, textarea, select)::placeholder {
+  color: #94a3b8;
+}
+
+.dark option {
+  background-color: #1e293b;
+  color: #f8fafc;
+}
+
+.dark table {
+  color: #e2e8f0;
+}
+
+.dark :is(th, td) {
+  border-color: #334155;
+}
+
+.dark [class~="hover:bg-white"]:hover,
+.dark [class~="hover:bg-gray-50"]:hover,
+.dark [class~="hover:bg-gray-100"]:hover,
+.dark [class~="hover:bg-indigo-50"]:hover {
+  background-color: #273449 !important;
+}
+
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}

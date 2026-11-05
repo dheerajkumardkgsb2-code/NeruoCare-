@@ -1,0 +1,310 @@
+{
+  "dashboard": {
+    "title": "Mental Wellness Portal",
+    "welcome": "Welcome back, {{name}}",
+    "dailyInspiration": "Daily Inspiration",
+    "mentalHealthQuotes": [
+      {
+        "text": "Your mental health is a priority. Your happiness is essential. Your self-care is a necessity.",
+        "author": "Unknown"
+      },
+      {
+        "text": "It's okay to not be okay. It's okay to ask for help. It's okay to take a break.",
+        "author": "Unknown"
+      }
+    ],
+    "metrics": {
+      "recentMood": "Recent Mood",
+      "sleepQuality": "Sleep Quality",
+      "stressLevel": "Stress Level",
+      "nextSession": "Next Session",
+      "lastCheckin": "Last check-in",
+      "noCheckins": "No check-ins yet",
+      "clickToRecord": "Click 'Check In Now' to record your mood",
+      "nightlyAverage": "Nightly average",
+      "reducedFromLastWeek": "Reduced from last week"
+    },
+    "moodHistory": {
+      "title": "Mood History",
+      "checkinCount": "{{count}} check-ins",
+      "noHistory": "No history yet",
+      "noCheckinsYet": "No mood check-ins yet",
+      "historyWillAppear": "Your mood history will appear here"
+    },
+    "upcomingSessions": {
+      "title": "Upcoming Sessions",
+      "noSessions": "No upcoming sessions scheduled",
+      "scheduleSession": "Schedule a session",
+      "sessionWith": "Session with {{counsellor}}"
+    },
+    "recentAssessments": {
+      "title": "Recent Assessments",
+      "noAssessments": "No assessments taken yet",
+      "takeAssessment": "Take an assessment"
+    },
+    "wellnessTips": {
+      "title": "Wellness Tips",
+      "mindfulBreathing": {
+        "title": "Mindful Breathing",
+        "description": "Take 5 minutes for deep breathing exercises to reduce stress and improve focus."
+      },
+      "sleepHygiene": {
+        "title": "Sleep Hygiene",
+        "description": "Maintain a consistent sleep schedule and create a relaxing bedtime routine."
+      },
+      "gratitudePractice": {
+        "title": "Gratitude Practice",
+        "description": "Write down three things you're grateful for each day to boost positive emotions."
+      }
+    },
+    "checkinPrompt": {
+      "title": "How are you feeling today?",
+      "lastCheckin": "Your last check-in was {{mood}}",
+      "noCheckin": "Take a moment to check in with your emotions",
+      "button": "Check In Now"
+    }
+  },
+  "mood": {
+    "excellent": "Excellent",
+    "excellentDesc": "Feeling great!",
+    "good": "Good",
+    "goodDesc": "Pretty good day",
+    "okay": "Okay",
+    "okayDesc": "Neutral, could be better",
+    "notGreat": "Not great",
+    "notGreatDesc": "A bit down",
+    "poor": "Poor",
+    "poorDesc": "Really struggling",
+    "checkinSuccess": "Thanks for checking in! Your mood has been recorded as {{mood}}."
+  },
+  "moodModal": {
+    "title": "How are you feeling?",
+    "selectMood": "Select your current mood:",
+    "optionalNotes": "Optional notes:",
+    "notesPlaceholder": "Add any context about your mood...",
+    "suggestions": "Suggestions:",
+    "submitButton": "Submit Check-in"
+  },
+  "moodSuggestions": {
+    "90": [
+      "Your positive energy is great! Consider journaling about what's making you happy.",
+      "Share your good mood with others - it can be contagious!",
+      "Take advantage of this positive energy to tackle something challenging."
+    ],
+    "70": [
+      "It's great that you're feeling good! Maybe try some light exercise to maintain this mood.",
+      "Consider connecting with friends or family to share your positive vibes.",
+      "Practice gratitude - write down three things you're thankful for today."
+    ],
+    "50": [
+      "Sometimes neutral days are opportunities for self-reflection.",
+      "Try a short mindfulness exercise to center yourself.",
+      "A brief walk outside might help improve your mood."
+    ],
+    "30": [
+      "Be gentle with yourself today. It's okay to not feel great all the time.",
+      "Consider talking to someone you trust about how you're feeling.",
+      "Simple self-care activities like a warm drink or favorite music might help."
+    ],
+    "10": [
+      "Remember that difficult feelings are temporary, even when they don't feel that way.",
+      "Consider reaching out to your support network or counselor.",
+      "Try a grounding exercise: name 5 things you can see, 4 you can touch, 3 you can hear, 2 you can smell, and 1 you can taste."
+    ]
+  },
+  "wellness": {
+    "lastSessionDefault": "2 days ago",
+    "nextSessionDefault": "Tomorrow, 3:00 PM",
+    "nextSessionWithCounsellor": "{{date}}, {{time}} with {{counsellor}}",
+    "defaultCounsellor": "Counsellor"
+  },
+  "errors": {
+    "noStudentId": "No student ID provided",
+    "noStudentData": "No student data received",
+    "loadFailed": "Failed to load student data",
+    "tryAgain": "Try Again",
+    "somethingWrong": "Something went wrong"
+  },
+  "common": {
+    "viewAll": "View all",
+    "score": "Score",
+    "login": "Login",
+    "anonymous": "Anonymous",
+    "email": "Email"
+  },
+  "loading": "Loading your dashboard...",
+  "language": {
+    "change": "Change language",
+    "english": "English",
+    "hindi": "हिन्दी",
+    "tamil": "தமிழ்",
+    "marathi": "मराठी"
+  },
+  "home": {
+    "hero": {
+      "title": "Welcome to",
+      "subtitle": "Your mental health support platform designed to help college students navigate",
+      "getStarted": "Get Started"
+    },
+    "flipWords": ["Anxiety", "Depression", "Burnout", "Academic Stress"],
+    "features": {
+      "title": "How NeuroCare Helps You",
+      "stressManagement": {
+        "title": "Stress Management",
+        "description": "Learn techniques to manage academic pressure and reduce anxiety with our guided exercises."
+      },
+      "communitySupport": {
+        "title": "Community Support",
+        "description": "Connect with peers who understand what you're going through in a safe, moderated environment."
+      },
+      "mindfulness": {
+        "title": "Mindfulness Exercises",
+        "description": "Practice mindfulness with our curated meditation sessions designed specifically for students."
+      }
+    },
+    "testimonialsTitle": "What Students Say",
+    "testimonials": [
+      {
+        "text": "NeuroCare helped me navigate my toughest semester. The breathing exercises became my daily ritual before studying.",
+        "author": "Psychology Major, Junior"
+      },
+      {
+        "text": "The community support here is incredible. I finally found people who understand what I'm going through.",
+        "author": "Engineering Student, Sophomore"
+      },
+      {
+        "text": "As an international student, NeuroCare provided me with tools to manage homesickness and academic pressure.",
+        "author": "International Student, Senior"
+      },
+      {
+        "text": "The mindfulness exercises have transformed how I handle stress. I'm more focused and less anxious during exams.",
+        "author": "Pre-Med Student, Junior"
+      },
+      {
+        "text": "I was hesitant at first, but the resources here genuinely helped with my burnout. Wish I found this earlier!",
+        "author": "Graduate Student, 2nd Year"
+      },
+      {
+        "text": "The anonymous support groups made me feel safe to share my struggles without judgment. Thank you, NeuroCare!",
+        "author": "Business Major, Freshman"
+      }
+    ],
+    "about": {
+      "title": "About NeuroCare",
+      "paragraph1": "NeuroCare was founded in 2020 by a team of psychologists, educators, and software developers who recognized the growing mental health challenges facing college students.",
+      "paragraph2": "Our mission is to provide accessible, evidence-based mental health support to students everywhere. We combine therapeutic techniques with modern technology to create a platform that's both effective and engaging.",
+      "paragraph3": "All our resources are developed in collaboration with licensed mental health professionals and are regularly updated based on the latest research in psychology and neuroscience.",
+      "stats": {
+        "students": "50K+",
+        "studentsLabel": "Students Helped",
+        "campuses": "100+",
+        "campusesLabel": "Campuses",
+        "support": "24/7",
+        "supportLabel": "Support Available"
+      }
+    },
+    "contact": {
+      "title": "Contact Us",
+      "getInTouch": "Get in Touch",
+      "description": "Have questions or want to learn more about how NeuroCare can support your campus community? Reach out to our team.",
+      "forCampuses": "For Campuses",
+      "sendMessage": "Send a Message",
+      "form": {
+        "name": "Your Name",
+        "email": "Your Email",
+        "message": "Your Message",
+        "sendButton": "Send Message"
+      }
+    },
+    "footer": {
+      "tagline": "Supporting student mental health",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "faq": "FAQ",
+      "copyright": "©️ 2023 NeuroCare. All rights reserved."
+    }
+  },
+  "wellnessIntake": {
+    "back": "Back",
+    "loading": "Loading your wellness profile...",
+    "title": "Wellness Profile",
+    "description": "This information powers your personalized risk assessment and wellness score — it's never shown to other students, and only your counsellor can see it if you're flagged for support. You can update it anytime.",
+    "select": "Select...",
+    "gender": "Gender",
+    "genderOptions": { "male": "Male", "female": "Female", "other": "Other" },
+    "city": "City",
+    "cityPlaceholder": "e.g. Pune",
+    "degree": "Degree",
+    "degreePlaceholder": "e.g. BTech",
+    "cgpa": "CGPA (0-10)",
+    "academicPressure": "Academic Pressure: {{value}}/5",
+    "workPressure": "Work Pressure: {{value}}/5",
+    "workPressureNote": "(leave 0 if you don't work)",
+    "studySatisfaction": "Study Satisfaction: {{value}}/5",
+    "financialStress": "Financial Stress: {{value}}/5",
+    "sleepDuration": "Sleep Duration",
+    "sleepOptions": {
+      "under5": "Less than 5 hours",
+      "5to6": "5-6 hours",
+      "7to8": "7-8 hours",
+      "over8": "More than 8 hours"
+    },
+    "dietaryHabits": "Dietary Habits",
+    "dietaryOptions": {
+      "healthy": "Healthy",
+      "moderate": "Moderate",
+      "unhealthy": "Unhealthy"
+    },
+    "workStudyHours": "Work/Study Hours per day: {{value}}h",
+    "familyHistory": "Family history of mental illness",
+    "saving": "Saving...",
+    "saved": "Saved ✓",
+    "save": "Save Wellness Profile"
+  },
+  "musicTherapy": {
+    "title": "Music Therapy",
+    "connectSubtitle": "Connect your Spotify account to access curated calming playlists and pick up your own music, right from NeuroCare.",
+    "connectButton": "Connect Spotify",
+    "subtitle": "Curated calm, right when you need it",
+    "disconnect": "Disconnect",
+    "loadError": "Couldn't load your Spotify data. Try reconnecting.",
+    "nowPlaying": "Now Playing on Spotify",
+    "loadingPlaylists": "Loading your playlists...",
+    "noPlaylists": "No playlists found yet.",
+    "yourLibrary": "Your library",
+    "curatedForYou": "Curated for you",
+    "openInSpotify": "Open in Spotify"
+  },
+  "videoCall": {
+    "connecting": "Requesting camera/microphone access...",
+    "waitingFor": "Waiting for {{name}} to join...",
+    "otherParticipant": "the other participant",
+    "connected": "Connected",
+    "ended": "Call ended",
+    "cameraError": "Couldn't access your camera/microphone. Check browser permissions and try again.",
+    "peerError": "The call connection failed. This can happen across some networks (strict NATs/firewalls) without a TURN server configured.",
+    "cameraOff": "Camera off",
+    "mute": "Mute",
+    "unmute": "Unmute",
+    "turnOffCamera": "Turn off camera",
+    "turnOnCamera": "Turn on camera",
+    "endCall": "End Call"
+  },
+  "chatBot": {
+    "preparingCompanion": "Preparing your AI companion...",
+    "title": "NeuroCare AI Companion",
+    "subtitle": "Hi! What can I help you with?",
+    "emptyPrompt": "Start a conversation, or try one of these:",
+    "starterPrompts": [
+      "I'm feeling really anxious about my exams",
+      "I've been having trouble sleeping",
+      "How do I deal with academic pressure?"
+    ],
+    "inputPlaceholder": "Type how you're feeling...",
+    "send": "Send",
+    "relatedLabel": "Related",
+    "errorMessage": "AI Support is temporarily unavailable. Please try again in a moment, or book a session with a counsellor.",
+    "footerDisclaimer": "This is supportive AI, not a replacement for professional care.",
+    "footerCrisis": "For immediate crisis support, please contact emergency services."
+  }
+}
